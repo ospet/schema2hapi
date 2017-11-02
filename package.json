@@ -1,0 +1,35 @@
+{
+  "name": "schema2hapi",
+  "version": "0.0.1",
+  "description": "Transform Mongoose schema to API for HapiJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ospet/schema2hapi.git"
+  },
+  "keywords": [
+    "Hapi",
+    "Schema",
+    "Mongoose",
+    "API",
+    "MongoDB"
+  ],
+  "author": "Olivier Spet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ospet/schema2hapi/issues"
+  },
+  "homepage": "https://github.com/ospet/schema2hapi#readme",
+  "dependencies": {
+    "hapi": "^16.6.2",
+    "mongoose": "^4.12.6"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.2"
+  }
+}

@@ -25,6 +25,7 @@
   "homepage": "https://github.com/ospet/schema2hapi#readme",
   "dependencies": {
     "hapi": "^16.6.2",
+    "lodash": "^4.17.4",
     "mongoose": "^4.12.6"
   },
   "devDependencies": {

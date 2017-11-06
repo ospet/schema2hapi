@@ -18,11 +18,6 @@ var schemas = [
   require('./user')
 ];
 
-schema2api.generateAPI(server, schemas, options, (err) => {
-  if(err) {
-    console.log(err);
-  }
-  console.log('API ready to be used');
-});
+var apiGenReport = schema2api.generateAPI(server, schemas, options);
 
 server.start();

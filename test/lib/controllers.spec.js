@@ -13,7 +13,7 @@ var dummyModel = mongoose.model('DummyModel', dummySchema);
 
 describe('Controllers', () => {
   it('generateController on empty schema', () => {
-    var ctrl = controllers.generateController({}, {});
+    var ctrl = controllers.generateController({});
     expect(ctrl).not.to.have.property('getAll');
     expect(ctrl).not.to.have.property('create');
     expect(ctrl).not.to.have.property('getById');
@@ -23,7 +23,7 @@ describe('Controllers', () => {
   });
 
   it('generateController', () => {
-    var ctrl = controllers.generateController({}, dummySchema);
+    var ctrl = controllers.generateController(dummySchema);
     expect(ctrl).to.have.property('getAll').to.be.a('function');
     expect(ctrl).to.have.property('create').to.be.a('function');
     expect(ctrl).to.have.property('getById').to.be.a('function');

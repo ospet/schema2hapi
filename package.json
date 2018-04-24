@@ -1,6 +1,6 @@
 {
   "name": "schema2hapi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Transform Mongoose schema to API for HapiJS",
   "main": "index.js",
   "engines": {

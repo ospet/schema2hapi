@@ -15,19 +15,19 @@ describe('Controllers', () => {
   it('generateController on empty schema', () => {
     var ctrl = controllers.generateController({});
     expect(ctrl).not.to.have.property('getAll');
-    expect(ctrl).not.to.have.property('create');
+    expect(ctrl).not.to.have.property('post');
     expect(ctrl).not.to.have.property('getById');
-    expect(ctrl).not.to.have.property('update');
-    expect(ctrl).not.to.have.property('remove');
+    expect(ctrl).not.to.have.property('put');
+    expect(ctrl).not.to.have.property('delete');
     expect(ctrl).to.be.empty;
   });
 
   it('generateController', () => {
-    var ctrl = controllers.generateController(dummySchema);
+    var ctrl = controllers.generateController(dummyModel);
     expect(ctrl).to.have.property('getAll').to.be.a('function');
-    expect(ctrl).to.have.property('create').to.be.a('function');
+    expect(ctrl).to.have.property('post').to.be.a('function');
     expect(ctrl).to.have.property('getById').to.be.a('function');
-    expect(ctrl).to.have.property('update').to.be.a('function');
-    expect(ctrl).to.have.property('remove').to.be.a('function');
+    expect(ctrl).to.have.property('put').to.be.a('function');
+    expect(ctrl).to.have.property('delete').to.be.a('function');
   });
 });

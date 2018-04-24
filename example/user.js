@@ -9,5 +9,4 @@ var userSchema = new mongoose.Schema({
   {collection: 'users'}
 );
 
-module.exports.schema = userSchema;
-module.exports.model = mongoose.model('UserModel', userSchema);
+module.exports = mongoose.model('UserModel', userSchema);

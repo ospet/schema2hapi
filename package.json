@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Transform Mongoose schema to API for HapiJS",
   "main": "index.js",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "test": "mocha test/**/*.js"
   },
@@ -24,12 +27,15 @@
   },
   "homepage": "https://github.com/ospet/schema2hapi#readme",
   "dependencies": {
-    "hapi": "^16.6.2",
+    "boom": "^7.2.0",
+    "hapi": "^17.3.1",
     "lodash": "^4.17.4",
-    "mongoose": "^4.12.6"
+    "mongoose": "^5.0.15"
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "chai-shallow-deep-equal": "^1.4.6",
     "mocha": "^4.0.1",
     "sinon": "^4.0.2"
   }
